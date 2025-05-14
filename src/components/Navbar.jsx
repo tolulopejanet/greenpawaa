@@ -16,12 +16,12 @@ const Navbar = () => {
 
   const menuItems = {
     installations: {
-      title: "Solar Panel Installations",
+      title: "Our Solutions",
       items: [
-        { name: "For Enterprise", desc: "Scale up your business" },
-        { name: "For Startups", desc: "Be productive with Solar" },
-        { name: "For Agencies", desc: "Win more clients" },
-        { name: "For Marketing", desc: "Drive more growth" },
+        { name: "For Rural Settlement", desc: "Scale up your business" },
+        { name: "For Enterprises", desc: "Be productive with Solar" },
+        { name: "Partnership", desc: "Win more clients" },
+        { name: "Pawaa Platform", desc: "Drive more growth" },
       ],
     },
     impact: {
@@ -29,7 +29,6 @@ const Navbar = () => {
       items: [
         { name: "Showcase", desc: "Scale up your business" },
         { name: "Blog", desc: "Be productive with Solar" },
-        { name: "Documentation", desc: "Learn from our resources" },
         { name: "Community", desc: "Join the conversation" },
       ],
     },
@@ -78,13 +77,14 @@ const Navbar = () => {
 
                 {activeDropdown === key && (
                   <div className="absolute left-0 mt-2 w-screen max-w-md bg-white rounded-md shadow-lg py-1 text-black">
-                    <div className="grid md:grid-cols-2 grid-cols-1 gap-12 p-4">
+                    <div className="grid md:grid-cols-2 grid-cols-1 gap-4 p-4">
                       {key === "platform" ? (
                         menuItems[key].sections.map((section, idx) => (
                           <div key={idx}>
                             <h3 className="text-xs font-semibold text-gray-500 tracking-wider mb-2">
                               {section.title}
                             </h3>
+                            {/* You might want to render items inside this section if needed */}
                           </div>
                         ))
                       ) : (
@@ -93,9 +93,9 @@ const Navbar = () => {
                             <Link
                               key={idx}
                               to={`/${key}/${item.name.toLowerCase()}`}
-                              className="group flex items-start p-2 rounded-lg hover:bg-gray-50"
+                              className="group flex items-start w-full p-2 rounded-lg hover:bg-gray-50 bg-white transition-colors"
                             >
-                              <div className="px-4">
+                              <div className="w-full">
                                 <p className="text-sm font-medium text-gray-900">
                                   {item.name}
                                 </p>
