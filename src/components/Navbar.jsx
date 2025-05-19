@@ -18,18 +18,25 @@ const Navbar = () => {
     installations: {
       title: "Our Solutions",
       items: [
-        { name: "For Rural Settlement", desc: "Scale up your business" },
-        { name: "For Enterprises", desc: "Be productive with Solar" },
-        { name: "Partnership", desc: "Win more clients" },
+        {
+          link: "solution",
+          name: "Product and Pricing Plan",
+          desc: "Be productive with Solar",
+        },
+        {
+          link: "partnership",
+          name: "Partnership and Enterprises",
+          desc: "Win more clients",
+        },
         { name: "Pawaa Platform", desc: "Drive more growth" },
       ],
     },
     impact: {
       title: "Our Impact",
       items: [
-        { name: "Showcase", desc: "Scale up your business" },
-        { name: "Blog", desc: "Be productive with Solar" },
-        { name: "Community", desc: "Join the conversation" },
+        { link: "showcase", name: "Showcase", desc: "Scale up your business" },
+        { link: "blog", name: "Blog", desc: "Be productive with Solar" },
+        { link: "community", name: "Community", desc: "Join the conversation" },
       ],
     },
   };
@@ -48,14 +55,14 @@ const Navbar = () => {
           {/* desktop menu */}
           <div className="hidden lg:flex items-center space-x-4">
             <Link
-              to="/pricing"
+              to="/"
               className="hover:text-gray-300 text-sm font-medium px-3"
             >
               {" "}
               Home
             </Link>
             <Link
-              to="/pricing"
+              to="/aboutus"
               className="hover:text-gray-300 text-sm font-medium px-3"
             >
               {" "}
@@ -92,7 +99,7 @@ const Navbar = () => {
                           {menuItems[key].items.map((item, idx) => (
                             <Link
                               key={idx}
-                              to={`/${key}/${item.name.toLowerCase()}`}
+                              to={item.link}
                               className="group flex items-start w-full p-2 rounded-lg hover:bg-gray-50 bg-white transition-colors"
                             >
                               <div className="w-full">
@@ -114,7 +121,7 @@ const Navbar = () => {
             ))}
 
             <Link
-              to="/pricing"
+              to="/contact"
               className="hover:text-gray-300 text-sm font-medium"
             >
               {" "}
@@ -125,7 +132,7 @@ const Navbar = () => {
           {/* auth btn */}
           <div className="hidden md:flex items-center space-x-4">
             <Link
-              to="/greenpawaa"
+              to="/"
               className="hover:text-gray-300 hidden bg-green-900 px-4 py-2 rounded-md hover:bg-green-100 hover:text-green-900 xl:block"
             >
               Sign Up
@@ -159,7 +166,7 @@ const Navbar = () => {
               Home{" "}
             </Link>
             <Link
-              to="/"
+              to="/aboutus"
               className="block px-3 py-2 hover:bg-green-800 bg:text-green-100"
             >
               About Us{" "}
@@ -191,7 +198,7 @@ const Navbar = () => {
                               {section.items.map((item, itemIdx) => (
                                 <Link
                                   key={itemIdx}
-                                  to={`/${key}/${item.name.toLowerCase()}`}
+                                  to={item.link}
                                   className="group flex items-start p-2 rounded-lg hover:text-green-800"
                                 ></Link>
                               ))}
@@ -225,7 +232,7 @@ const Navbar = () => {
             ))}
 
             <Link
-              to="/"
+              to="/contact"
               className="block px-3 py-2 hover:bg-green-800 bg:text-green-100"
             >
               Contact Us{" "}

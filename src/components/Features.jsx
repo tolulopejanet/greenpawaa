@@ -10,7 +10,7 @@ import {
   FaGgCircle,
 } from "react-icons/fa";
 
-const Aboutus = () => {
+const Features = () => {
   const serviceItems = [
     {
       icon: <FaAtom className="mr-2 size-6" />,
@@ -135,4 +135,4 @@ const Aboutus = () => {
   );
 };
 
-export default Aboutus;
+export default Features;
