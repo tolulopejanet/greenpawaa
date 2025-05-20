@@ -7,6 +7,7 @@ import Image1 from "../assets/panel2.jpg";
 import Image2 from "../assets/panel.png";
 import Image3 from "../assets/gadgets.png";
 import Image4 from "../assets/pic1.jpg";
+import Image5 from "../assets/training.jpeg";
 import Image6 from "../assets/powerbank.jpeg";
 import { fadeIn } from "../utils/motion";
 
@@ -14,7 +15,7 @@ const blogs = [
   {
     title: "Lighting Up Africa: The Solar Energy Revolution",
     author: "Green Pawaa",
-    image: Image1,
+    image: Image2,
     preview:
       "Solar energy is changing lives across the continent — here’s how Green Pawaa is leading the charge...",
     content:
@@ -23,7 +24,7 @@ const blogs = [
   {
     title: "Beyond the Grid: How Green Pawaa Empowers Rural Communities",
     author: "Green Pawaa",
-    image: Image2,
+    image: Image3,
     preview:
       "Rural communities deserve dependable power too — and we're delivering just that...",
     content:
@@ -32,7 +33,7 @@ const blogs = [
   {
     title: "5 Reasons to Switch to Solar Now",
     author: "Green Pawaa",
-    image: Image3,
+    image: Image1,
     preview:
       "Still thinking about going solar? Here are five reasons why now is the perfect time...",
     content:
@@ -50,7 +51,7 @@ const blogs = [
   {
     title: "Training the Next Generation of Green Tech Leaders",
     author: "Green Pawaa",
-    image: Image1,
+    image: Image5,
     preview:
       "Green energy isn’t just about systems — it’s about people. Here’s how we’re building talent...",
     content:
