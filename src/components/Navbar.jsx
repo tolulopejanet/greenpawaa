@@ -19,7 +19,7 @@ const Navbar = () => {
       title: "Our Solutions",
       items: [
         {
-          link: "solution",
+          link: "productandpricing-plan",
           name: "Product and Pricing Plan",
           desc: "Be productive with Solar",
         },
@@ -28,7 +28,11 @@ const Navbar = () => {
           name: "Partnership and Enterprises",
           desc: "Win more clients",
         },
-        { name: "Pawaa Platform", desc: "Drive more growth" },
+        {
+          link: "pawaaplatform",
+          name: "Pawaa Platform",
+          desc: "Drive more growth",
+        },
       ],
     },
     impact: {
