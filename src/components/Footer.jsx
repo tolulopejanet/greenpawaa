@@ -13,9 +13,9 @@ const Footer = () => {
         <div>
           <h2 className="text-lg font-bold mb-4">About Us</h2>
           <p className="text-green-100">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Reprehenderit blanditiis doloremque, facilis odit id commodi vel
-            placeat nisi.
+            We design solutions that not only serve today but also shape a
+            better tomorrow from residential solar setups to commercial systems
+            and innovative energy products.
           </p>
         </div>
 
