@@ -19,18 +19,18 @@ const Navbar = () => {
       title: "Our Solutions",
       items: [
         {
-          link: "productandpricing-plan",
-          name: "Product and Pricing Plan",
+          link: "products",
+          name: "Products",
           desc: "Be productive with Solar",
+        },
+        {
+          link: "payment-plan",
+          name: "Payment Plan",
+          desc: "Win more clients",
         },
         {
           link: "partnership",
           name: "Partnership and Enterprises",
-          desc: "Win more clients",
-        },
-        {
-          link: "pawaaplatform",
-          name: "Pawaa Platform",
           desc: "Drive more growth",
         },
       ],
@@ -52,7 +52,7 @@ const Navbar = () => {
           {/* logo */}
           <div>
             <Link to="/" className="text-xl ">
-              <img src={Logo} alt="logo" className="w-20 h-25 object-cover" />
+              <img src={Logo} alt="logo" className="w-30 h-35 object-cover" />
             </Link>
           </div>
 
@@ -60,14 +60,14 @@ const Navbar = () => {
           <div className="hidden lg:flex items-center space-x-4">
             <Link
               to="/"
-              className="hover:text-gray-300 text-sm font-medium px-3"
+              className="hover:text-gray-300 text-sm font-bold px-3"
             >
               {" "}
               Home
             </Link>
             <Link
               to="/aboutus"
-              className="hover:text-gray-300 text-sm font-medium px-3"
+              className="hover:text-gray-300 text-sm font-bold px-3"
             >
               {" "}
               About Us
@@ -76,7 +76,7 @@ const Navbar = () => {
               <div key={key.title} className="relative">
                 <button
                   onClick={() => toggleDropdown(key)}
-                  className="hover:text-gray-300 px-3 py-2 rounded-md text-sm font-medium flex items-center cursor-pointer"
+                  className="hover:text-gray-300 px-3 py-2 rounded-md text-sm font-bold flex items-center cursor-pointer"
                 >
                   {menuItems[key].title}
                   <MdKeyboardArrowDown
@@ -87,15 +87,15 @@ const Navbar = () => {
                 </button>
 
                 {activeDropdown === key && (
-                  <div className="absolute left-0 mt-2 w-screen max-w-md bg-white rounded-md shadow-lg py-1 text-black">
-                    <div className="grid md:grid-cols-2 grid-cols-1 gap-4 p-4">
+                  <div className="absolute left-0 mt-2 w-60 bg-white rounded-md shadow-lg py-1 text-black">
+                    <div className="grid grid-cols-1 gap-4 p-4">
                       {key === "platform" ? (
                         menuItems[key].sections.map((section, idx) => (
                           <div key={idx}>
-                            <h3 className="text-xs font-semibold text-gray-500 tracking-wider mb-2">
+                            <h3 className="text-xs font-bold text-gray-500 tracking-wider mb-2">
                               {section.title}
                             </h3>
-                            {/* You might want to render items inside this section if needed */}
+                            
                           </div>
                         ))
                       ) : (
@@ -107,7 +107,7 @@ const Navbar = () => {
                               className="group flex items-start w-full p-2 rounded-lg hover:bg-gray-50 bg-white transition-colors"
                             >
                               <div className="w-full">
-                                <p className="text-sm font-medium text-gray-900">
+                                <p className="text-sm font-bold text-gray-900">
                                   {item.name}
                                 </p>
                                 <p className="text-sm text-gray-500">
@@ -126,7 +126,7 @@ const Navbar = () => {
 
             <Link
               to="/contact"
-              className="hover:text-gray-300 text-sm font-medium"
+              className="hover:text-gray-300 text-sm font-bold"
             >
               {" "}
               Contact Us

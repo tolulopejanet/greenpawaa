@@ -4,7 +4,7 @@ import { FaCheckCircle } from "react-icons/fa";
 const PricingPlans = () => {
   const plans = [
     {
-      name: "Pawaa Lite",
+      name: "",
       price: "₦15,000",
       description:
         "Perfect for small households or individuals starting with solar.",

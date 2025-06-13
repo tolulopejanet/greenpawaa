@@ -11,8 +11,9 @@ import Showcase from "./routes/Showcase";
 import Blog from "./routes/Blog";
 import CommunityPage from "./routes/Community";
 import ContactUs from "./routes/Contact";
+import Products from "./routes/Products"
 import PawaaPlatform from "./routes/PawaaPlatform";
-import ProductandPlans from "./routes/ProductandPlans";
+import Paymentplan from "./routes/Paymentplan"
 import Partnership from "./routes/Partnership";
 
 function Home() {
@@ -35,7 +36,8 @@ function App() {
         <Route path="/blog" element={<Blog />} />
         <Route path="/community" element={<CommunityPage />} />
         <Route path="/pawaaplatform" element={<PawaaPlatform />} />
-        <Route path="/productandpricing-plan" element={<ProductandPlans />} />
+        <Route path="/products" element={<Products />} />
+        <Route path="/payment-plan" element={<Paymentplan />} />
         <Route path="/partnership" element={<Partnership />} />
         <Route path="/contact" element={<ContactUs />} />
       </Routes>
