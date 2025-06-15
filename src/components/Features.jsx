@@ -76,7 +76,7 @@ const Features = () => {
             specialize in solar technology, from installations to product
             innovation, with one goal: to make everyday life easier and greener
             for all.
-            <button className="mt-4 bg-[#014130] hover:text-green-300 text-white font-bold py-2 px-4 border-b-4 border-[#014130] rounded flex items-center">
+            <button className="mt-4 bg-[#014130] hover:text-green-300 text-white font-bold py-2 px-4 border-b-4 border-[#014130] rounded-full flex items-center">
               Explore Our Solar Solutions
               <FaArrowRight className="ml-2" />
             </button>

@@ -119,7 +119,7 @@ const PricingPlans = () => {
               </ul>
             </div>
 
-            <button className="mt-6 w-full bg-[#014130] text-white py-2 rounded-md font-semibold hover:bg-green-800 transition">
+            <button className="mt-6 w-full bg-[#014130] text-white py-2 rounded-full font-semibold hover:bg-green-800 transition">
               Choose Plan
             </button>
           </div>

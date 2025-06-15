@@ -133,7 +133,7 @@ const Navbar = () => {
           <div className="hidden md:flex items-center space-x-4">
             <Link
               to="/"
-              className="hover:text-gray-300 hidden bg-green-900 px-4 py-2 rounded-md hover:bg-green-100 hover:text-green-900 xl:block"
+              className="hover:text-gray-300 hidden bg-green-900 px-4 py-2 rounded-full hover:bg-green-100 hover:text-green-900 xl:block"
             >
               Sign Up
             </Link>

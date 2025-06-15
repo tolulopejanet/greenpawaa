@@ -1,16 +1,27 @@
 import React from "react";
 import { FaFacebook, FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import ServImage from "../assets/panel2.jpg";
+
 // import Lottie from "lottie-react";
 // import contact from "../assets/contact.json";
 
 const ContactUs = () => {
   return (
     <div className="pt-32 px-12 mb-16 mx-auto max-w-7xl">
+      <div className="relative aspect-image overflow-hidden rounded-lg">
+        <img
+          src={ServImage}
+          className="w-full lg:h-[70vh] h-[50vh] object-cover"
+        />
+        <div className="absolute inset-0 bg-black/60"></div>
+      </div>
+
+      <div></div>
       <div className="flex flex-col justify-between items-center gap-8">
         <form
           action=""
-          className="w-full md:w-1/2 bg:gray-100 rounded-lg border border-green-300 shadow-lg shadow-blue-500 p-10"
+          className="w-full md:w-1/2 bg:white rounded-lg border border-green-300 shadow-lg shadow-blue-500 p-10 z-50 mt-[-45px]"
         >
           <h1 className="text-4xl font-bold mb-7 text-center">Contact Us</h1>
           <div className="mb-4">

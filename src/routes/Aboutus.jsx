@@ -7,12 +7,12 @@ import support from "../assets/support.jpg";
 
 const Aboutus = () => {
   return (
-    <div className="pt-48 px-6 sm:px-10 md:px-16 lg:px-24 pb-12 bg-white">
+    <div className="pt-48 pb-12 px-12 bg-white">
       <div className="text-center space-y-5">
         <h2 className="text-3xl md:text-5xl font-bold text-gray-800">
           About Us
         </h2>
-        <p className="md:w-1/2 mx-auto mb-12">
+        <p className="md:w-1/2 mb-12 mx-auto">
           We design solutions that not only serve today but also shape a better
           tomorrow from residential solar setups to commercial systems and
           innovative energy products.
@@ -22,20 +22,20 @@ const Aboutus = () => {
       <div className="py-12 md:w-4/5 mx-auto">
         <Tabs>
           <TabList className="flex flex-wrap justify-between items-center md:gap-8 gap-4 bg-white p-4 rounded-2xl border shadow-lg cursor-pointer">
-            <Tab className="text-black hover:text-[#014130] hover:font-bold">
+            <Tab className="text-black font-bold hover:text-[#014130]">
               Our Mission
             </Tab>
-            <Tab className="text-black hover:text-[#014130] hover:font-bold">
+            <Tab className="text-black hover:text-[#014130] font-bold">
               Our Vision
             </Tab>
-            <Tab className="text-black hover:text-[#014130] hover:font-bold">
+            <Tab className="text-black hover:text-[#014130] font-bold">
               Support
             </Tab>
           </TabList>
 
           <TabPanel>
             <div className="flex flex-col md:flex-row gap-8 mt-8">
-              <div className="md:w-1/2 bg-white rounded-lg p-12 mt-4">
+              <div className="md:w-1/2 bg-white rounded-full p-12 mt-4">
                 <h3 className="text-3xl font-semibold mb-4">Our Mission</h3>
                 <p className="mb-8 text-justify">
                   At Greenpawaa, our mission is to{" "}
