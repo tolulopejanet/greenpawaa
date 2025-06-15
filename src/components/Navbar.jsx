@@ -24,9 +24,9 @@ const Navbar = () => {
           desc: "Be productive with Solar",
         },
         {
-          link: "payment-plan",
-          name: "Payment Plan",
-          desc: "Win more clients",
+          link: "pawaa-pay",
+          name: "Pawaa Pay",
+          desc: "Affordable and flexible payment",
         },
         {
           link: "partnership",
@@ -58,10 +58,7 @@ const Navbar = () => {
 
           {/* desktop menu */}
           <div className="hidden lg:flex items-center space-x-4">
-            <Link
-              to="/"
-              className="hover:text-gray-300 text-sm font-bold px-3"
-            >
+            <Link to="/" className="hover:text-gray-300 text-sm font-bold px-3">
               {" "}
               Home
             </Link>
@@ -95,7 +92,6 @@ const Navbar = () => {
                             <h3 className="text-xs font-bold text-gray-500 tracking-wider mb-2">
                               {section.title}
                             </h3>
-                            
                           </div>
                         ))
                       ) : (

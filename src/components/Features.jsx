@@ -53,7 +53,7 @@ const Features = () => {
   ];
 
   return (
-    <div className="px-8 py-12 space-y-16">
+    <div className="px-12 py-12 space-y-16">
       {/* Header */}
       <div className="text-center">
         <h2 className="text-xl font-normal text-gray-900">
@@ -70,7 +70,7 @@ const Features = () => {
           <img src={Panel} alt="" className="w-full rounded-lg" />
         </div>
         <div className="flex flex-col justify-center">
-          <p className="text-gray-600 text-lg md:text-xl text-justify">
+          <p className="text-gray-600 text-lg md:text-xl text-left">
             Greenpawaa is a forward-thinking organization committed to
             transforming lives through sustainable energy solutions. We
             specialize in solar technology, from installations to product

@@ -4,7 +4,7 @@ import { FaCheckCircle } from "react-icons/fa";
 const PricingPlans = () => {
   const plans = [
     {
-      name: "",
+      name: "Mini Pawaa",
       price: "₦15,000",
       description:
         "Perfect for small households or individuals starting with solar.",
@@ -17,7 +17,7 @@ const PricingPlans = () => {
       popular: false,
     },
     {
-      name: "Pawaa Elite",
+      name: "Standard Pawaa",
       price: "₦30,000",
       description:
         "Ideal for families or small offices needing reliable energy.",
@@ -30,14 +30,54 @@ const PricingPlans = () => {
       popular: true,
     },
     {
-      name: "Pawaa Plus",
-      price: "₦42,000",
-      description: "Best for businesses or homes with high power demands.",
+      name: "Midi Pawaa",
+      price: "₦15,000",
+      description:
+        "Perfect for small households or individuals starting with solar.",
+      benefits: [
+        "Powerful Lithium Battery",
+        "3 LED Bulbs",
+        "Weatherproof Design for Outdoor Use",
+        "USB phone charging port",
+      ],
+      popular: false,
+    },
+
+    {
+      name: "Basic Pawaa",
+      price: "₦15,000",
+      description:
+        "Perfect for small households or individuals starting with solar.",
+      benefits: [
+        "Powerful Lithium Battery",
+        "3 LED Bulbs",
+        "Weatherproof Design for Outdoor Use",
+        "USB phone charging port",
+      ],
+      popular: false,
+    },
+    {
+      name: "Premium Pawaa",
+      price: "₦30,000",
+      description:
+        "Ideal for families or small offices needing reliable energy.",
       benefits: [
         "Powerful Lithium Battery",
         "3 LED Bulbs",
         "Rechargeable fan",
-        "Rechargeable radio",
+        "USB phone charging port",
+      ],
+      popular: true,
+    },
+    {
+      name: "Maxi Pawaa",
+      price: "₦15,000",
+      description:
+        "Perfect for small households or individuals starting with solar.",
+      benefits: [
+        "Powerful Lithium Battery",
+        "3 LED Bulbs",
+        "Weatherproof Design for Outdoor Use",
         "USB phone charging port",
       ],
       popular: false,
@@ -50,7 +90,7 @@ const PricingPlans = () => {
         Effective & Flexible Pricing That Adapts Your Needs
       </h2>
 
-      <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+      <div className="grid md:grid-cols-3 gap-18 max-w-6xl mx-auto">
         {plans.map((plan, idx) => (
           <div
             key={idx}
