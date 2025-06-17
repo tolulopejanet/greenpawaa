@@ -15,11 +15,11 @@ const Footer = () => {
       <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 text-sm text-green-100">
         
         {/* Logo + About */}
-        <div>
+        <div className>
           <img
             src={logo}
             alt="Green Pawaa Logo"
-            className="h-30 md:mx-0"
+            className="h-30 w-auto ml-[-20px]"
           />
           <p className="mt-[-20px]">
             Powering the future with clean, reliable, and sustainable energy solutions across Africa and beyond.

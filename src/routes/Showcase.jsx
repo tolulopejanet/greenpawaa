@@ -87,11 +87,13 @@ const Showcase = () => {
             onClick={() => handleOpenModal(index)}
             className="bg-gray-100 rounded-xl shadow-md p-4 cursor-pointer transition-transform duration-200 hover:scale-105"
           >
-            <img
-              src={slide.img}
-              alt={`Slide ${index + 1}`}
-              className="w-full h-64 object-cover rounded-md"
-            />
+            <div className="flex items-center justify-center w-full h-64 bg-white rounded-md">
+              <img
+                src={slide.img}
+                alt={`Slide ${index + 1}`}
+                className="max-h-full max-w-full object-contain"
+              />
+            </div>
           </div>
         ))}
       </div>
