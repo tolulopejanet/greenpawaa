@@ -10,7 +10,7 @@ import ServImage from "../assets/panel2.jpg";
 
 const ContactUs = () => {
   return (
-    <div className="pt-24">
+    <div className="pt-20">
       {/* Hero Image */}
       <div className="relative w-full h-[60vh] overflow-hidden rounded-lg">
         <img
@@ -28,7 +28,7 @@ const ContactUs = () => {
       {/* Contact Section */}
       <div className="max-w-7xl mx-auto px-6 py-16 grid grid-cols-1 lg:grid-cols-3 gap-10 items-start">
         
-        {/* Left Column - Vertically Centered */}
+        {/* Left Column */}
         <div className="flex flex-col justify-center self-center space-y-10">
           <div>
             <h2 className="text-xl font-bold mb-4 text-green-900">Follow Us</h2>
