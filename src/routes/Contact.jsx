@@ -1,97 +1,104 @@
 import React from "react";
-import { FaFacebook, FaInstagram, FaLinkedin, FaTwitter, FaWhatsapp } from "react-icons/fa";
-import { Link } from "react-router-dom";
+import {
+  FaFacebook,
+  FaInstagram,
+  FaLinkedin,
+  FaTwitter,
+  FaWhatsapp,
+} from "react-icons/fa";
 import ServImage from "../assets/panel2.jpg";
 
 const ContactUs = () => {
   return (
-    <div className="pt-24 mb-16">
-      <div className="relative aspect-image overflow-hidden rounded-lg">
+    <div className="pt-24">
+      {/* Hero Image */}
+      <div className="relative w-full h-[60vh] overflow-hidden rounded-lg">
         <img
           src={ServImage}
-          className="w-full lg:h-[70vh] h-[50vh] object-cover"
+          alt="Solar Panel"
+          className="absolute inset-0 w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-black/60"></div>
+        <div className="absolute inset-0 bg-black/60 flex items-center justify-center">
+          <h1 className="text-4xl text-white font-bold text-center px-4">
+            Contact Us
+          </h1>
+        </div>
       </div>
 
-      <div className="flex lg:flex-row justify-between flex-col-reverse items-center px-12 gap-8">
-         <div>
-          <h2 className="text-lg font-bold mb-4">Follow Us</h2>
-          <ul className="flex space-x-4 justify-left">
-            <li>
-              <FaInstagram className="text-white-500 size-8 hover:text-green-400 cursor-pointer" />
-            </li>
-            <li>
-              <FaFacebook className="text-white-500 size-8 hover:text-green-400 cursor-pointer" />
-            </li>
-            <li>
-              <FaTwitter className="text-white-500 size-8 hover:text-green-400 cursor-pointer" />
-            </li>
-            <li>
-              <FaLinkedin className="text-white-500 size-8 hover:text-green-400 cursor-pointer" />
-            </li>
-          </ul>
-        </div>
-        <div>
-           <h2 className="text-lg font-bold mt-5 mb-2">Reach Us on WhatsApp</h2>
-           <div className="flex space-x-4 justify-left">
-              <FaWhatsapp className="text-white-500 size-8" />
-              <span className="text-[20px]" >08138257344</span>
+      {/* Contact Section */}
+      <div className="max-w-7xl mx-auto px-6 py-16 grid grid-cols-1 lg:grid-cols-3 gap-10 items-start">
+        
+        {/* Left Column - Vertically Centered */}
+        <div className="flex flex-col justify-center self-center space-y-10">
+          <div>
+            <h2 className="text-xl font-bold mb-4 text-green-900">Follow Us</h2>
+            <div className="flex space-x-4 text-green-800 text-2xl">
+              <FaInstagram className="hover:text-green-500 cursor-pointer" />
+              <FaFacebook className="hover:text-green-500 cursor-pointer" />
+              <FaTwitter className="hover:text-green-500 cursor-pointer" />
+              <FaLinkedin className="hover:text-green-500 cursor-pointer" />
             </div>
+          </div>
+          <div>
+            <h2 className="text-xl font-bold mb-2 text-green-900">WhatsApp</h2>
+            <div className="flex items-center space-x-2 text-lg text-green-800">
+              <a
+  href="https://wa.me/2348138257344"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="flex items-center space-x-2 text-lg text-green-800 hover:text-green-500 transition"
+>
+  <FaWhatsapp />
+  <span>0813 825 7344</span>
+</a>
+            </div>
+          </div>
+        </div>
 
-          
-          </div>
-
-        <form
-          action=""
-          className="w-full md:w-1/2 sticky  rounded-[50px] border border-green-300 shadow-lg shadow-blue-500 bg-white p-10 z-50 mt-[-95px]"
-        >
-          <h1 className="text-4xl font-bold mb-7 text-center">Contact Us</h1>
-          <div className="mb-4">
-            <label
-              htmlFor="name"
-              className="block text-sm font-medium text-black/80"
+        {/* Right Column */}
+        <div className="lg:col-span-2 bg-white border border-green-300 rounded-xl shadow-md p-8">
+          <h2 className="text-3xl font-bold text-center mb-8 text-green-900">
+            Get In Touch
+          </h2>
+          <form className="space-y-6">
+            <div>
+              <label className="block mb-1 font-medium text-gray-700">
+                Full Name
+              </label>
+              <input
+                type="text"
+                placeholder="Enter your name"
+                className="w-full border border-gray-300 p-3 rounded-md focus:outline-none focus:ring-2 focus:ring-green-400"
+              />
+            </div>
+            <div>
+              <label className="block mb-1 font-medium text-gray-700">
+                Email Address
+              </label>
+              <input
+                type="email"
+                placeholder="Enter your email"
+                className="w-full border border-gray-300 p-3 rounded-md focus:outline-none focus:ring-2 focus:ring-green-400"
+              />
+            </div>
+            <div>
+              <label className="block mb-1 font-medium text-gray-700">
+                Message
+              </label>
+              <textarea
+                rows="4"
+                placeholder="Your message..."
+                className="w-full border border-gray-300 p-3 rounded-md focus:outline-none focus:ring-2 focus:ring-green-400"
+              ></textarea>
+            </div>
+            <button
+              type="submit"
+              className="bg-green-800 text-white px-6 py-3 rounded-md hover:bg-green-700 transition w-full"
             >
-              Name
-            </label>
-            <input
-              type="text"
-              id="name"
-              placeholder="Full Name"
-              className="mt-1 p-2 block w-full rounded-md border-gray-400 shadow-sm focus:border-indigo-300 focus:ring-indigo-200 focus:ring-opacity-50"
-            />
-          </div>
-          <div className="mb-4">
-            <label
-              htmlFor="email"
-              className="block text-sm font-medium text-black/80"
-            >
-              Email
-            </label>
-            <input
-              type="email"
-              id="email"
-              placeholder="Email"
-              className="mt-1 p-2 block w-full rounded-md border-gray-400 shadow-sm focus:border-indigo-300 focus:ring-indigo-200 focus:ring-opacity-50"
-            />
-          </div>
-          <div className="mb-4">
-            <label
-              htmlFor="message"
-              className="block text-sm font-medium text-black/80"
-            >
-              Message
-            </label>
-            <textarea
-              id="message"
-              placeholder="Enter your message"
-              className="mt-1 p-2 block w-full rounded-md border-gray-400 shadow-sm focus:border-indigo-300 focus:ring-indigo-200 focus:ring-opacity-50"
-            />
-          </div>
-          <button className="bg-green-900 px-3 py-2 rounded-xl text-white">
-            Send Message
-          </button>
-        </form>
+              Send Message
+            </button>
+          </form>
+        </div>
       </div>
     </div>
   );

@@ -52,7 +52,7 @@ const Navbar = () => {
           {/* logo */}
           <div>
             <Link to="/" className="text-xl ">
-              <img src={Logo} alt="logo" className="w-30 h-35 object-cover" />
+              <img src={Logo} alt="logo" className="h-30 mx-auto md:mx-0" />
             </Link>
           </div>
 

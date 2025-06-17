@@ -1,5 +1,7 @@
 import { useState } from "react";
 import Image1 from "../assets/gadgets.png";
+import Image3 from "../assets/cof.jpeg";
+import Image4 from "../assets/cof2.jpeg";
 import Image2 from "../assets/powerbank.jpeg";
 import {
   FaChevronCircleLeft,
@@ -12,12 +14,12 @@ const Showcase = () => {
   const [openModal, setOpenModal] = useState(false);
 
   const galleryImages = [
-    { img: Image1 },
+    { img: Image3 },
     { img: Image2 },
     { img: Image1 },
     { img: Image2 },
     { img: Image1 },
-    { img: Image2 },
+    { img: Image4 },
     { img: Image1 },
     { img: Image2 },
     { img: Image1 },

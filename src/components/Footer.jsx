@@ -5,90 +5,71 @@ import {
   FaLinkedin,
   FaTwitter,
 } from "react-icons/fa";
+import { Link } from "react-router-dom";
+import logo from "../assets/logo.png";
 
 const Footer = () => {
   return (
-    <footer className="bg-[#014130]  pt-16">
-      <div className="px-6 grid grid-cols-1 md:grid-cols-3 gap-8 text-green-50 text-center">
+    <footer className="bg-[#014130] text-white px-6 pt-12 pb-6">
+
+      <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 text-sm text-green-100">
+        
+        {/* Logo + About */}
         <div>
-          <h2 className="text-lg font-bold mb-4">About Us</h2>
-          <p className="text-green-100">
-            We design solutions that not only serve today but also shape a
-            better tomorrow from residential solar setups to commercial systems
-            and innovative energy products.
+          <img
+            src={logo}
+            alt="Green Pawaa Logo"
+            className="h-30 mx-auto md:mx-0"
+          />
+          <p className="mt-[-20px]">
+            Powering the future with clean, reliable, and sustainable energy solutions across Africa and beyond.
           </p>
         </div>
 
+        {/* Quick Links */}
         <div>
-          <h2 className="text-lg font-bold mb-4">Quick Links</h2>
-          <ul>
-            <li>
-              <a href="#" className="hover:underline text-green-100 ">
-                Home
-              </a>
-            </li>
-            <li>
-              <a href="#" className="hover:underline text-green-100 ">
-                Our Impact
-              </a>
-            </li>
-            <li>
-              <a href="#" className="hover:underline text-green-100 ">
-                News
-              </a>
-            </li>
-            <li>
-              <a href="#" className="hover:underline text-green-100 ">
-                Sign Up
-              </a>
-            </li>
-            <li>
-              <a href="#" className="hover:underline text-green-100 ">
-                Contact
-              </a>
-            </li>
+          <h3 className="text-lg font-semibold mb-4 text-white">Quick Links</h3>
+          <ul className="space-y-2">
+            <li><Link to="/" className="hover:underline">Home</Link></li>
+            <li><Link to="/aboutus" className="hover:underline">About Us</Link></li>
+            <li><Link to="/products" className="hover:underline">Products</Link></li>
+            <li><Link to="/contact" className="hover:underline">Contact</Link></li>
           </ul>
         </div>
 
+        {/* Services / Resources */}
         <div>
-          <h2 className="text-lg font-bold mb-4">Follow Us</h2>
-          <ul className="flex space-x-4 justify-center">
-            <li>
-              {" "}
-              <FaInstagram className="text-white-500 size-5" />
-            </li>
-            <li>
-              <FaFacebookF className="text-white-500 size-5" />
-            </li>
-            <li>
-              <FaTwitter className="text-white-500 size-5" />
-            </li>
-            <li>
-              <FaLinkedin className="text-white-500 size-5" />
-            </li>
+          <h3 className="text-lg font-semibold mb-4 text-white">Our Services</h3>
+          <ul className="space-y-2">
+            <li><Link to="/showcase" className="hover:underline">Showcase</Link></li>
+            <li><Link to="/pawaa-pay" className="hover:underline">Pawaa Pay</Link></li>
+            <li><Link to="/blog" className="hover:underline">Blog</Link></li>
+            <li><Link to="/partnership" className="hover:underline">Partnership and Enterprises</Link></li>
           </ul>
+        </div>
 
-          <div className="mt-10">
-            <div className="h-full flex items-center justify-center">
-              <form className="w-96 relative" action="">
-                <input
-                  type="email"
-                  placeholder="Email Address"
-                  className="w-full text-green-300 p-4 h-10 rounded-full focus:outline-none focus:border outline-[2px] border-green-300"
-                />
-                <button
-                  type="submit"
-                  className="bg-green-300 px-8 py-2 rounded-full text-black absolute top-0 right-0 cursor-pointer"
-                >
-                  Subscribe
-                </button>
-              </form>
-            </div>
+        {/* Socials */}
+        <div>
+          <h3 className="text-lg font-semibold mb-4 text-white">Follow Us</h3>
+          <div className="flex space-x-4 justify-center md:justify-start mb-4">
+            {[FaInstagram, FaFacebookF, FaTwitter, FaLinkedin].map((Icon, idx) => (
+              <Icon
+                key={idx}
+                className="text-green-100 hover:text-white transition text-lg cursor-pointer"
+              />
+            ))}
           </div>
+          <p>Let’s stay connected on social media and build a greener future together.</p>
         </div>
       </div>
-      <div className="border-t border-green-100 p-4 text-green-100 text-center mt-10">
-        <p>&copy; 2025 Green Pawaa. All Rights Reserved. </p>
+
+      {/* Divider*/}
+      <div className="max-w-7xl mx-auto mt-10 border-t border-green-100/20 pt-4 text-center text-green-200 text-xs flex flex-col md:flex-row justify-between items-center gap-4">
+        <p>&copy; {new Date().getFullYear()} Green Pawaa. All rights reserved.</p>
+        <div className="space-x-4">
+          <Link to="/privacy-policy" className="hover:underline">Privacy Policy</Link>
+          <Link to="/terms" className="hover:underline">Terms of Use</Link>
+        </div>
       </div>
     </footer>
   );

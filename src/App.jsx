@@ -5,6 +5,7 @@ import Footer from "./components/Footer";
 import HeroSection from "./components/HeroSection";
 import Navbar from "./components/Navbar";
 import Plans from "./components/Plans";
+import Subscription from "./components/Subscription";
 // import BlogSection from "./routes/Blog";
 import Aboutus from "./routes/Aboutus";
 import Showcase from "./routes/Showcase";
@@ -22,6 +23,7 @@ function Home() {
       <HeroSection />
       <Features />
       <Plans />
+      <Subscription/>
     </>
   );
 }
