@@ -1,14 +1,11 @@
 import React from "react";
-import { FaFacebook, FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa";
+import { FaFacebook, FaInstagram, FaLinkedin, FaTwitter, FaWhatsapp } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import ServImage from "../assets/panel2.jpg";
 
-// import Lottie from "lottie-react";
-// import contact from "../assets/contact.json";
-
 const ContactUs = () => {
   return (
-    <div className="pt-32 px-12 mb-16 mx-auto max-w-7xl">
+    <div className="pt-24 mb-16">
       <div className="relative aspect-image overflow-hidden rounded-lg">
         <img
           src={ServImage}
@@ -17,11 +14,37 @@ const ContactUs = () => {
         <div className="absolute inset-0 bg-black/60"></div>
       </div>
 
-      <div></div>
-      <div className="flex flex-col justify-between items-center gap-8">
+      <div className="flex lg:flex-row justify-between flex-col-reverse items-center px-12 gap-8">
+         <div>
+          <h2 className="text-lg font-bold mb-4">Follow Us</h2>
+          <ul className="flex space-x-4 justify-left">
+            <li>
+              <FaInstagram className="text-white-500 size-8 hover:text-green-400 cursor-pointer" />
+            </li>
+            <li>
+              <FaFacebook className="text-white-500 size-8 hover:text-green-400 cursor-pointer" />
+            </li>
+            <li>
+              <FaTwitter className="text-white-500 size-8 hover:text-green-400 cursor-pointer" />
+            </li>
+            <li>
+              <FaLinkedin className="text-white-500 size-8 hover:text-green-400 cursor-pointer" />
+            </li>
+          </ul>
+        </div>
+        <div>
+           <h2 className="text-lg font-bold mt-5 mb-2">Reach Us on WhatsApp</h2>
+           <div className="flex space-x-4 justify-left">
+              <FaWhatsapp className="text-white-500 size-8" />
+              <span className="text-[20px]" >08138257344</span>
+            </div>
+
+          
+          </div>
+
         <form
           action=""
-          className="w-full md:w-1/2 bg:white rounded-lg border border-green-300 shadow-lg shadow-blue-500 p-10 z-50 mt-[-45px]"
+          className="w-full md:w-1/2 sticky  rounded-[50px] border border-green-300 shadow-lg shadow-blue-500 bg-white p-10 z-50 mt-[-95px]"
         >
           <h1 className="text-4xl font-bold mb-7 text-center">Contact Us</h1>
           <div className="mb-4">

@@ -76,7 +76,7 @@ export default function Blog() {
       initial="hidden"
       whileInView="show"
       viewport={{ once: true }}
-      className="w-full bg-gray-50 pt-15 px-4 sm:px-6 lg:px-8 py-16 md:py-24"
+      className="w-full bg-gray-50 pt-15 py-16 md:py-24"
     >
       <div className="relative aspect-image overflow-hidden rounded-lg">
         <img src={ServImage} className="w-full lg:h-[70vh] h-[50vh] object-cover" />
@@ -93,7 +93,7 @@ export default function Blog() {
         </div>
       </div>
 
-      <div className="py-6 bg-gray-100 min-h-screen">
+      <div className="py-6 bg-gray-100 min-h-screen px-4 sm:px-6 lg:px-8">
         <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
           {blogs.map((blog, index) => (
             <div

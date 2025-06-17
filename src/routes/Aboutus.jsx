@@ -19,16 +19,16 @@ const Aboutus = () => {
         </p>
       </div>
 
-      <div className="py-12 md:w-4/5 mx-auto">
+      <div className="py-12 mx-auto">
         <Tabs>
           <TabList className="flex flex-wrap justify-between items-center md:gap-8 gap-4 bg-white p-4 rounded-2xl border shadow-lg cursor-pointer">
-            <Tab className="text-black font-bold hover:text-[#014130]">
+            <Tab className="text-black font-bold hover:text-[#014130] hover:underline">
               Our Mission
             </Tab>
-            <Tab className="text-black hover:text-[#014130] font-bold">
+            <Tab className="text-black hover:text-[#014130] font-bold hover:underline">
               Our Vision
             </Tab>
-            <Tab className="text-black hover:text-[#014130] font-bold">
+            <Tab className="text-black hover:text-[#014130] font-bold hover:underline">
               Support
             </Tab>
           </TabList>
