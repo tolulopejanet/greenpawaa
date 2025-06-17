@@ -19,7 +19,7 @@ const Footer = () => {
           <img
             src={logo}
             alt="Green Pawaa Logo"
-            className="h-30 mx-auto md:mx-0"
+            className="h-30 md:mx-0"
           />
           <p className="mt-[-20px]">
             Powering the future with clean, reliable, and sustainable energy solutions across Africa and beyond.
@@ -51,7 +51,7 @@ const Footer = () => {
         {/* Socials */}
         <div>
           <h3 className="text-lg font-semibold mb-4 text-white">Follow Us</h3>
-          <div className="flex space-x-4 justify-center md:justify-start mb-4">
+          <div className="flex space-x-4 md:justify-start mb-4">
             {[FaInstagram, FaFacebookF, FaTwitter, FaLinkedin].map((Icon, idx) => (
               <Icon
                 key={idx}
