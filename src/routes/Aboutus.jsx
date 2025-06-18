@@ -21,19 +21,19 @@ const Aboutus = () => {
         <Tabs>
           <TabList className="flex flex-wrap justify-between items-center md:gap-8 gap-4 bg-white p-4 rounded-2xl border shadow-lg cursor-pointer">
   <Tab
-    className="text-black font-bold hover:text-[#014130]"
+    className="text-black font-bold hover:text-green-400"
     selectedClassName="text-green-400 font-bold"
   >
     Our Mission
   </Tab>
   <Tab
-    className="text-black font-bold hover:text-[#014130]"
+    className="text-black font-bold hover:text-green-400"
     selectedClassName="text-green-400 font-bold"
   >
     Our Vision
   </Tab>
   <Tab
-    className="text-black font-bold hover:text-[#014130]"
+    className="text-black font-bold hover:text-green-400"
     selectedClassName="text-green-400 font-bold"
   >
     Support
@@ -42,7 +42,7 @@ const Aboutus = () => {
 
           <TabPanel>
             <div className="flex flex-col md:flex-row gap-8 mt-8">
-              <div className="md:w-1/2 bg-white rounded-full p-12 mt-4">
+              <div className="md:w-1/2 bg-white rounded-full lg:p-12 sm:p-6 mt-4">
                 <h3 className="text-3xl font-semibold mb-4">Our Mission</h3>
                 <p className="mb-8 text-justify">
                   At Greenpawaa, our mission is to{" "}
@@ -66,7 +66,7 @@ const Aboutus = () => {
 
           <TabPanel>
             <div className="flex flex-col md:flex-row gap-8 mt-8">
-              <div className="md:w-1/2 bg-white rounded-lg p-12">
+              <div className="md:w-1/2 bg-white rounded-lg lg:p-12 sm:p-6">
                 <h3 className="text-3xl font-semibold mb-4">Our Vision</h3>
                 <p className="mb-8 text-justify">
                   We envision a world where access to clean energy is not a
@@ -93,7 +93,7 @@ const Aboutus = () => {
 
           <TabPanel>
             <div className="flex flex-col md:flex-row gap-8 mt-8">
-              <div className="md:w-1/2 bg-white rounded-lg p-12">
+              <div className="md:w-1/2 bg-white rounded-lg lg:p-12 sm:p-6">
                 <h3 className="text-3xl font-semibold mb-4">Our Support</h3>
                 <p className="mb-8 text-justify">
                   We are not just a solar company, we are your energy partner.
