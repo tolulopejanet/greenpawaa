@@ -9,9 +9,7 @@ const Aboutus = () => {
   return (
     <div className="pt-48 pb-12 px-12 bg-white">
       <div className="text-center space-y-5">
-        <h2 className="text-3xl md:text-5xl font-bold text-gray-800">
-          About Us
-        </h2>
+        <h2 className="text-3xl md:text-5xl font-bold text-gray-800">About Us</h2>
         <p className="md:w-1/2 mb-12 mx-auto">
           We design solutions that not only serve today but also shape a better
           tomorrow from residential solar setups to commercial systems and
@@ -19,19 +17,28 @@ const Aboutus = () => {
         </p>
       </div>
 
-      <div className="py-12 mx-auto">
+      <div className="py-12 max-w-5xl mx-auto">
         <Tabs>
           <TabList className="flex flex-wrap justify-between items-center md:gap-8 gap-4 bg-white p-4 rounded-2xl border shadow-lg cursor-pointer">
-            <Tab className="text-black font-bold hover:text-[#014130] hover:underline">
-              Our Mission
-            </Tab>
-            <Tab className="text-black hover:text-[#014130] font-bold hover:underline">
-              Our Vision
-            </Tab>
-            <Tab className="text-black hover:text-[#014130] font-bold hover:underline">
-              Support
-            </Tab>
-          </TabList>
+  <Tab
+    className="text-black font-bold hover:text-[#014130]"
+    selectedClassName="text-green-400 font-bold"
+  >
+    Our Mission
+  </Tab>
+  <Tab
+    className="text-black font-bold hover:text-[#014130]"
+    selectedClassName="text-green-400 font-bold"
+  >
+    Our Vision
+  </Tab>
+  <Tab
+    className="text-black font-bold hover:text-[#014130]"
+    selectedClassName="text-green-400 font-bold"
+  >
+    Support
+  </Tab>
+</TabList>
 
           <TabPanel>
             <div className="flex flex-col md:flex-row gap-8 mt-8">
@@ -47,7 +54,6 @@ const Aboutus = () => {
                   energy gap and promote a greener future for all.
                 </p>
               </div>
-
               <div className="md:w-1/2">
                 <img
                   src={mission}
@@ -57,6 +63,7 @@ const Aboutus = () => {
               </div>
             </div>
           </TabPanel>
+
           <TabPanel>
             <div className="flex flex-col md:flex-row gap-8 mt-8">
               <div className="md:w-1/2 bg-white rounded-lg p-12">
@@ -83,6 +90,7 @@ const Aboutus = () => {
               </div>
             </div>
           </TabPanel>
+
           <TabPanel>
             <div className="flex flex-col md:flex-row gap-8 mt-8">
               <div className="md:w-1/2 bg-white rounded-lg p-12">
@@ -96,9 +104,7 @@ const Aboutus = () => {
                   you every step of the way with{" "}
                   <b>clarity, care, and commitment</b>.
                 </p>
-                <h4 className="text-xl font-medium text-black mb-4">
-                  Benefits
-                </h4>
+                <h4 className="text-xl font-medium text-black mb-4">Benefits</h4>
                 <ul className="list-disc list-inside space-y-3">
                   <li>24/7 Virtual Support</li>
                   <li>No Downtime</li>
