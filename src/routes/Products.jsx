@@ -1,8 +1,27 @@
 import React, { useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
 
-import Image1 from "../assets/gadgets.png";
-import Image2 from "../assets/powerbank.jpeg";
+import Image1 from "../assets/Bulb2.png";
+import Image2 from "../assets/Bulb4.png";
+import Image3 from "../assets/Bulb3.png";
+import Image4 from "../assets/bulb.png";
+import Image11 from "../assets/StandingFan1.png";
+import Image12 from "../assets/Fan3.png";
+import Image13 from "../assets/StandingFan2.png";
+import Image14 from "../assets/Fan4.png";
+import Image21 from "../assets/PowerStation.png";
+import Image22 from "../assets/PowerStation.png";
+import Image23 from "../assets/Radio3.png";
+import Image24 from "../assets/PowerStation.png";
+import Image31 from "../assets/GRadio2.jpg";
+import Image32 from "../assets/GRadio.png";
+import Image33 from "../assets/GRadio.png";
+import Image34 from "../assets/Panel.png";
+import Image41 from "../assets/Carton.png";
+import Image42 from "../assets/Fan.png";
+import Image43 from "../assets/SECURITY.png";
+import Image44 from "../assets/GPanel.png";
+
 
 import { FiBatteryCharging, FiSettings, FiBox } from "react-icons/fi";
 import { BsLightningCharge, BsLightbulb, BsFan } from "react-icons/bs";
@@ -29,24 +48,24 @@ const Products = () => {
       id: "bulb",
       items: [
         {
-          name: "Portable Solar Fan",
-          specs: ["12V", "3-speed settings", "Portable", "Low noise"],
+          name:"Bulb1",
+          specs: ["Fast Charge", "Brighter and Durable", "360 Lighting", "Lithium Battery"],
           image: Image1,
         },
         {
           name: "Wall Solar Fan",
-          specs: ["16-inch", "Rechargeable", "Silent motor", "LED display"],
+          specs: ["Solar Panel Charge","Brighter and Durable","360 Lighting","Lithium Battery"],
           image: Image2,
         },
         {
           name: "Standing Solar Fan",
-          specs: ["Adjustable height", "45W", "Oscillating", "Stable base"],
-          image: Image1,
+          specs: ["5V USB Powered ", "Brighter and Durable","360 Lighting","Hangable and Portable"],
+          image: Image3,
         },
         {
           name: "Mini Desk Solar Fan",
           specs: ["USB chargeable", "Compact", "Lightweight", "Efficient"],
-          image: Image2,
+          image: Image4,
         },
       ],
     },
@@ -57,22 +76,22 @@ const Products = () => {
         {
           name: "LED Solar Bulb",
           specs: ["7W", "1000lm brightness", "Long life", "Energy saving"],
-          image: Image1,
+          image: Image11,
         },
         {
           name: "Emergency Solar Bulb",
           specs: ["Auto-on", "During outage", "Rechargeable", "12 hrs runtime"],
-          image: Image2,
+          image: Image12,
         },
         {
           name: "Smart Solar Bulb",
           specs: ["Remote control", "Dimmable", "Cool & Warm", "Wireless"],
-          image: Image1,
+          image: Image13,
         },
         {
           name: "Hanging Solar Bulb",
           specs: ["Outdoor hook", "12 hrs use", "Compact", "Bright light"],
-          image: Image2,
+          image: Image14,
         },
       ],
     },
@@ -83,51 +102,26 @@ const Products = () => {
         {
           name: "500W Inverter",
           specs: ["Pure sine wave", "12V", "Compact", "Fanless"],
-          image: Image2,
+          image: Image21,
         },
         {
           name: "1kVA Solar Inverter",
           specs: ["Built-in controller", "Durable", "Display", "Safety fuse"],
-          image: Image1,
+          image: Image22,
         },
         {
           name: "Hybrid Inverter",
           specs: ["1.5kW", "MPPT charge", "Solar/AC hybrid", "Low noise"],
-          image: Image2,
+          image: Image23,
         },
         {
           name: "Compact Inverter",
           specs: ["300W backup", "Wall-mountable", "LED indicators", "Safe"],
-          image: Image1,
+          image: Image24,
         },
       ],
     },
-    {
-      name: "Old Stock",
-      id: "old-stock",
-      items: [
-        {
-          name: "10000mAh Powerbank",
-          specs: ["Dual USB", "LED light", "Compact", "Solar panel"],
-          image: Image1,
-        },
-        {
-          name: "20000mAh Solar Pack",
-          specs: ["Waterproof", "Rugged design", "4 outputs", "Fast charge"],
-          image: Image2,
-        },
-        {
-          name: "Slim Solar Powerbank",
-          specs: ["Fast charging", "Pocket size", "USB-C", "LED display"],
-          image: Image1,
-        },
-        {
-          name: "Wireless Solar Charger",
-          specs: ["Qi enabled", "15000mAh", "Solar + USB", "LED torch"],
-          image: Image2,
-        },
-      ],
-    },
+   
     {
       name: "Others",
       id: "others",
@@ -135,22 +129,48 @@ const Products = () => {
         {
           name: "10000mAh Powerbank",
           specs: ["Dual USB", "LED light", "Compact", "Solar panel"],
-          image: Image1,
+          image: Image31,
         },
         {
           name: "20000mAh Solar Pack",
           specs: ["Waterproof", "Rugged design", "4 outputs", "Fast charge"],
-          image: Image2,
+          image: Image32,
         },
         {
           name: "Slim Solar Powerbank",
           specs: ["Fast charging", "Pocket size", "USB-C", "LED display"],
-          image: Image1,
+          image: Image33,
         },
         {
           name: "Wireless Solar Charger",
           specs: ["Qi enabled", "15000mAh", "Solar + USB", "LED torch"],
-          image: Image2,
+          image: Image34,
+        },
+      ],
+    },
+     {
+      name: "Old Stock",
+      id: "old-stock",
+      items: [
+        {
+          name: "10000mAh Powerbank",
+          specs: ["Dual USB", "LED light", "Compact", "Solar panel"],
+          image: Image41,
+        },
+        {
+          name: "20000mAh Solar Pack",
+          specs: ["Waterproof", "Rugged design", "4 outputs", "Fast charge"],
+          image: Image42,
+        },
+        {
+          name: "Slim Solar Powerbank",
+          specs: ["Fast charging", "Pocket size", "USB-C", "LED display"],
+          image: Image43,
+        },
+        {
+          name: "Wireless Solar Charger",
+          specs: ["Qi enabled", "15000mAh", "Solar + USB", "LED torch"],
+          image: Image44,
         },
       ],
     },
