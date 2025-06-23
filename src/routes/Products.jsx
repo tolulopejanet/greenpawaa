@@ -12,7 +12,7 @@ import Image14 from "../assets/Fan4.png";
 import Image21 from "../assets/PowerStation.png";
 import Image22 from "../assets/Powerstation2.png";
 import Image23 from "../assets/Radio3.png";
-import Image24 from "../assets/Powerstation2.png";
+import Image24 from "../assets/Powerstation33.png";
 import Image31 from "../assets/GRadio2.jpg";
 import Image32 from "../assets/GRadio.png";
 import Image33 from "../assets/POWERBANK.png";
@@ -64,7 +64,7 @@ const Products = () => {
         },
         {
           name: "Pawaa V1 LED",
-          specs: ["Fast Charge", "Brighter and Durable", "360 Lighting", "Lithium Battery"],
+          specs: ["Emergency Light", "Brighter and Durable", "360 Lighting", "Lithium Battery"],
           image: Image4,
         },
       ],
@@ -91,7 +91,7 @@ const Products = () => {
           image: Image13,
         },
         {
-          name: "Power USB Fan",
+          name: "Pawaa USB Fan",
           specs: ["USB Powered", "Strong Wind Power", "8 inches", "Light Weight and Portable"],
           image: Image14,
         },
@@ -102,13 +102,13 @@ const Products = () => {
       id: "power-station",
       items: [
         {
-          name: "500W Inverter",
-          specs: ["Pure sine wave", "12V", "Compact", "Fanless"],
+          name: "Pawaa PS500",
+          specs: ["500W Rated Power", "AC charging Option","Solar Panel Charging Option","DC Output & AC Output","Lithium Battery", "Flash Light"],
           image: Image21,
         },
         {
-          name: "1kVA Solar Inverter",
-          specs: ["Built-in controller", "Durable", "Display", "Safety fuse"],
+          name: "Pawaa PS300",
+          specs: ["300W Rated Power", "AC charging Option", "Solar Panel Charging Option", "DC Output & AC Output","Lithium Battery", "Flash Light"],
           image: Image22,
         },
         {
@@ -117,8 +117,8 @@ const Products = () => {
           image: Image23,
         },
         {
-          name: "Compact Inverter",
-          specs: ["300W backup", "Wall-mountable", "LED indicators", "Safe"],
+          name: "Pawaa PS200",
+          specs: ["200W Rated Power", "AC charging Option", "Solar Panel Charging Option","DC Output & AC Output","Lithium Battery","Flash Light"],
           image: Image24,
         },
       ],
@@ -134,7 +134,7 @@ const Products = () => {
           image: Image31,
         },
         {
-          name: "20000mAh Solar Pack",
+          name: "Pawaa Radio",
           specs: ["Waterproof", "Rugged design", "4 outputs", "Fast charge"],
           image: Image32,
         },
@@ -155,13 +155,13 @@ const Products = () => {
       id: "old-stock",
       items: [
         {
-          name: "10000mAh Powerbank",
-          specs: ["Dual USB", "LED light", "Compact", "Solar panel"],
-          image: Image41,
+          name: "Pawaa V1 LED",
+          specs: ["Emergency Light", "Brighter and Durable", "360 Lighting", "Lithium Battery"],
+          image: Image4,
         },
         {
-          name: "20000mAh Solar Pack",
-          specs: ["Waterproof", "Rugged design", "4 outputs", "Fast charge"],
+          name: "Rechargeable Fan",
+          specs: ["USB Powered", "Strong Wind Power", "8 inches", "Light Weight and Portable"],
           image: Image42,
         },
         {
