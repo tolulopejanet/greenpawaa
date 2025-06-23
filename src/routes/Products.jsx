@@ -86,8 +86,7 @@ const Products = () => {
         },
         {
           name: 'Pawaa 16" Solar Fan',
-          specs: ["AC/DC Power Option", "3 - speed Level", "16 inches",
-"USB Mobile Charger","Night Light and Bluetooth Speaker"],
+          specs: ["AC/DC Power Option", "3 - speed Level", "16 inches","USB Mobile Charger","Night Light and Bluetooth Speaker"],
           image: Image13,
         },
         {
@@ -112,8 +111,8 @@ const Products = () => {
           image: Image22,
         },
         {
-          name: "Hybrid Inverter",
-          specs: ["1.5kW", "MPPT charge", "Solar/AC hybrid", "Low noise"],
+          name: "Multi Pawaa PS",
+          specs: ["AC charging Option","Solar Panel Charging Option","FM Radio","Lithium Battery","Flash Light"],
           image: Image23,
         },
         {
@@ -129,23 +128,23 @@ const Products = () => {
       id: "others",
       items: [
         {
-          name: "10000mAh Powerbank",
+          name: "Panels",
           specs: ["Dual USB", "LED light", "Compact", "Solar panel"],
           image: Image31,
         },
         {
           name: "Pawaa Radio",
-          specs: ["Waterproof", "Rugged design", "4 outputs", "Fast charge"],
+          specs: ["FM Radio","Wireless Bluetooth Speaker","Loud Speaker","Mirror", "Alarm Clock", "Digital Clock"],
           image: Image32,
         },
         {
-          name: "Slim Solar Powerbank",
-          specs: ["Fast charging", "Pocket size", "USB-C", "LED display"],
+          name: "Pawaabank",
+          specs: ["2 USB-A output + 1 USB-C output","Fast charging", "Pocket size", "USB-C", "LED display"],
           image: Image33,
         },
         {
-          name: "Wireless Solar Charger",
-          specs: ["Qi enabled", "15000mAh", "Solar + USB", "LED torch"],
+          name: "Panels",
+          specs: ["High Efficiency", "Durable","Light Weight", "Adaptive Design"],
           image: Image34,
         },
       ],
@@ -165,13 +164,14 @@ const Products = () => {
           image: Image42,
         },
         {
-          name: "Slim Solar Powerbank",
-          specs: ["Fast charging", "Pocket size", "USB-C", "LED display"],
+          name: "Security Light",
+          specs: ["Solar Powered","270° Motion Sensing",
+"Waterproof", "Portable and Durable"],
           image: Image43,
         },
         {
-          name: "Wireless Solar Charger",
-          specs: ["Qi enabled", "15000mAh", "Solar + USB", "LED torch"],
+          name: "Panel V1",
+          specs: ["Dual USB", "LED light", "Compact", "Solar panel"],
           image: Image44,
         },
       ],
