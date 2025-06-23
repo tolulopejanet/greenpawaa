@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { MdClose, MdKeyboardArrowDown, MdMenu } from "react-icons/md";
 import { NavLink } from "react-router-dom";
 import Logo from "../assets/logo.png";
@@ -6,6 +6,7 @@ import Logo from "../assets/logo.png";
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [activeDropdown, setActiveDropdown] = useState(null);
+  const navRef = useRef(null);
 
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
 
@@ -38,8 +39,25 @@ const Navbar = () => {
     },
   };
 
+  // Close dropdown when clicking outside
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (navRef.current && !navRef.current.contains(event.target)) {
+        setActiveDropdown(null);
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
+
   return (
-    <nav className="bg-[#014130] text-white fixed top-0 left-0 right-0 border-b border-white/10 z-50">
+    <nav
+      ref={navRef}
+      className="bg-[#014130] text-white fixed top-0 left-0 right-0 border-b border-white/10 z-50"
+    >
       <div className="container mx-auto px-4 py-2 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <div>
@@ -61,29 +79,25 @@ const Navbar = () => {
                 >
                   {menuItems[key].title}
                   <MdKeyboardArrowDown
-                    className={`ml-2 h-5 w-5 transition-transform ${
-                      activeDropdown === key ? "rotate-180" : ""
-                    }`}
+                    className={`ml-2 h-5 w-5 transition-transform ${activeDropdown === key ? "rotate-180" : ""}`}
                   />
                 </button>
 
                 {activeDropdown === key && (
                   <div className="absolute left-0 mt-2 w-60 bg-white rounded-md shadow-lg py-1 text-black z-10">
                     <div className="grid grid-cols-1 gap-4 p-4">
-                      <div className="space-y-2">
-                        {menuItems[key].items.map((item, idx) => (
-                          <NavLink
-                            key={idx}
-                            to={`/${item.link}`}
-                            className="group flex items-start w-full p-2 rounded-lg hover:bg-gray-50 bg-white transition-colors"
-                          >
-                            <div className="w-full">
-                              <p className="text-sm font-bold text-gray-900">{item.name}</p>
-                              <p className="text-sm text-gray-500">{item.desc}</p>
-                            </div>
-                          </NavLink>
-                        ))}
-                      </div>
+                      {menuItems[key].items.map((item, idx) => (
+                        <NavLink
+                          key={idx}
+                          to={`/${item.link}`}
+                          className="group flex items-start w-full p-2 rounded-lg hover:bg-gray-50 bg-white transition-colors"
+                        >
+                          <div className="w-full">
+                            <p className="text-sm font-bold text-gray-900">{item.name}</p>
+                            <p className="text-sm text-gray-500">{item.desc}</p>
+                          </div>
+                        </NavLink>
+                      ))}
                     </div>
                   </div>
                 )}
@@ -129,9 +143,7 @@ const Navbar = () => {
               >
                 {menuItems[key].title}
                 <MdKeyboardArrowDown
-                  className={`ml-2 h-5 w-5 transition-transform ${
-                    activeDropdown === key ? "rotate-180" : ""
-                  }`}
+                  className={`ml-2 h-5 w-5 transition-transform ${activeDropdown === key ? "rotate-180" : ""}`}
                 />
               </button>
 
