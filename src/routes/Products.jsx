@@ -10,14 +10,14 @@ import Image12 from "../assets/Fan3.png";
 import Image13 from "../assets/StandingFan2.png";
 import Image14 from "../assets/Fan4.png";
 import Image21 from "../assets/PowerStation.png";
-import Image22 from "../assets/PowerStation.png";
+import Image22 from "../assets/Powerstation2.png";
 import Image23 from "../assets/Radio3.png";
-import Image24 from "../assets/PowerStation.png";
+import Image24 from "../assets/Powerstation2.png";
 import Image31 from "../assets/GRadio2.jpg";
 import Image32 from "../assets/GRadio.png";
-import Image33 from "../assets/GRadio.png";
+import Image33 from "../assets/POWERBANK.png";
 import Image34 from "../assets/Panel.png";
-import Image41 from "../assets/Carton.png";
+import Image41 from "../assets/Fan4.png";
 import Image42 from "../assets/Fan.png";
 import Image43 from "../assets/SECURITY.png";
 import Image44 from "../assets/GPanel.png";
@@ -48,23 +48,23 @@ const Products = () => {
       id: "bulb",
       items: [
         {
-          name:"Bulb1",
+          name:"Pawaa LED Bulb",
           specs: ["Fast Charge", "Brighter and Durable", "360 Lighting", "Lithium Battery"],
           image: Image1,
         },
         {
-          name: "Wall Solar Fan",
+          name: "Pawaa LED Solar Bulb",
           specs: ["Solar Panel Charge","Brighter and Durable","360 Lighting","Lithium Battery"],
           image: Image2,
         },
         {
-          name: "Standing Solar Fan",
+          name: "Pawaa USB Bulb",
           specs: ["5V USB Powered ", "Brighter and Durable","360 Lighting","Hangable and Portable"],
           image: Image3,
         },
         {
-          name: "Mini Desk Solar Fan",
-          specs: ["USB chargeable", "Compact", "Lightweight", "Efficient"],
+          name: "Pawaa V1 LED",
+          specs: ["Fast Charge", "Brighter and Durable", "360 Lighting", "Lithium Battery"],
           image: Image4,
         },
       ],
@@ -74,23 +74,25 @@ const Products = () => {
       id: "fan",
       items: [
         {
-          name: "LED Solar Bulb",
-          specs: ["7W", "1000lm brightness", "Long life", "Energy saving"],
+          name: 'Pawaa 18" Solar Fan',
+          specs: ["AC/DC Power Option", "3 - speed Level", "18 inches",
+"USB Mobile Charger","Night Light and Repellant"],
           image: Image11,
         },
         {
-          name: "Emergency Solar Bulb",
-          specs: ["Auto-on", "During outage", "Rechargeable", "12 hrs runtime"],
+          name: 'Pawaa 8" Rechargeable Fan',
+          specs: ["Lithium DC Power","3 - speed Level", "8 inches", "LED Light"],
           image: Image12,
         },
         {
-          name: "Smart Solar Bulb",
-          specs: ["Remote control", "Dimmable", "Cool & Warm", "Wireless"],
+          name: 'Pawaa 16" Solar Fan',
+          specs: ["AC/DC Power Option", "3 - speed Level", "16 inches",
+"USB Mobile Charger","Night Light and Bluetooth Speaker"],
           image: Image13,
         },
         {
-          name: "Hanging Solar Bulb",
-          specs: ["Outdoor hook", "12 hrs use", "Compact", "Bright light"],
+          name: "Power USB Fan",
+          specs: ["USB Powered", "Strong Wind Power", "8 inches", "Light Weight and Portable"],
           image: Image14,
         },
       ],
