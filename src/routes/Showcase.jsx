@@ -1,8 +1,11 @@
 import { useState } from "react";
-import Image1 from "../assets/gadgets.png";
+import Image1 from "../assets/PRODUCT3.jpg";
+import Image5 from "../assets/PRODUCT2.png";
+import Image6 from "../assets/PRODUCT1.png";
 import Image3 from "../assets/cof.jpeg";
 import Image4 from "../assets/cof2.jpeg";
 import Image2 from "../assets/powerbank.jpeg";
+
 import {
   FaChevronCircleLeft,
   FaChevronCircleRight,
@@ -17,11 +20,11 @@ const Showcase = () => {
     { img: Image3 },
     { img: Image2 },
     { img: Image1 },
-    { img: Image2 },
-    { img: Image1 },
+    { img: Image5 },
     { img: Image4 },
-    { img: Image1 },
-    { img: Image2 },
+    { img: Image6 },
+    { img: Image6 },
+    { img: Image5 },
     { img: Image1 },
     { img: Image2 },
   ];
