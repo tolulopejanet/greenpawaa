@@ -43,7 +43,7 @@ const ContactUs = () => {
             <h2 className="text-xl font-bold mb-2 text-green-900">WhatsApp</h2>
             <div className="flex items-center space-x-2 text-lg text-green-800">
               <a
-  href="https://wa.me/2348138257344"
+  href="https://wa.me/2348100589346"
   target="_blank"
   rel="noopener noreferrer"
   className="flex items-center space-x-2 text-lg text-green-800 hover:text-green-500 transition"
