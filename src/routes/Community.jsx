@@ -1,5 +1,5 @@
 import { useState } from "react";
-import Image1 from "../assets/gadgets.png";
+import Image1 from "../assets/PRODUCT1.png";
 import Image2 from "../assets/powerbank.jpeg";
 import IbadanImg from "../assets/ibadan.jpg"; // Add your image
 import BadagryImg from "../assets/badagry.jpg"; // Add your image

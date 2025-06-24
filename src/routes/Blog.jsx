@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import Image1 from "../assets/panel2.jpg";
 import Image2 from "../assets/panel.png";
-import Image3 from "../assets/gadgets.png";
+import Image3 from "../assets/PRODUCT1.png";
 import Image4 from "../assets/pic1.jpg";
 import Image5 from "../assets/training.jpeg";
 import Image6 from "../assets/powerbank.jpeg";

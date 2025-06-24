@@ -57,10 +57,10 @@ const Features = () => {
     <div className="px-12 py-12 space-y-16">
       {/* Header */}
       <div className="text-center">
-        <h2 className="text-xl font-normal text-gray-900">
-          Fuel Your World with the Sun
+        <h2 className="text-[18px] font-normal text-gray-900">
+          Power your everyday experience, sustainably with GreenPawaa.
         </h2>
-        <p className="text-black text-3xl md:text-5xl font-bold mt-2">
+        <p className="text-black text-3xl md:text-5xl font-bold mt-1">
           Welcome to Green Pawaa
         </p>
       </div>

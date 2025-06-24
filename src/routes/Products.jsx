@@ -128,7 +128,7 @@ const Products = () => {
       id: "others",
       items: [
         {
-          name: "Panels",
+          name: "Pawaa Eco PS",
           specs: ["Dual USB", "LED light", "Compact", "Solar panel"],
           image: Image31,
         },

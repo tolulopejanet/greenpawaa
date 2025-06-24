@@ -6,6 +6,7 @@ import {
   FaTwitter,
   FaWhatsapp,
 } from "react-icons/fa";
+import { Link } from "react-router-dom";
 import ServImage from "../assets/panel2.jpg";
 
 const ContactUs = () => {
@@ -33,23 +34,22 @@ const ContactUs = () => {
           <div>
             <h2 className="text-xl font-bold mb-4 text-green-900">Follow Us</h2>
             <div className="flex space-x-4 text-green-800 text-2xl">
-              <FaInstagram className="hover:text-green-500 cursor-pointer" />
-              <FaFacebook className="hover:text-green-500 cursor-pointer" />
-              <FaTwitter className="hover:text-green-500 cursor-pointer" />
-              <FaLinkedin className="hover:text-green-500 cursor-pointer" />
+               <Link to="https://www.instagram.com/greenpawaang"><FaInstagram className="hover:text-green-500 cursor-pointer" /></Link>
+               <Link to="https://x.com/greenpawaa"><FaTwitter className="hover:text-green-500 cursor-pointer" /></Link>
+               <Link to="https://www.linkedin.com/company/greenpawaang"><FaLinkedin className="hover:text-green-500 cursor-pointer" /></Link>
             </div>
           </div>
           <div>
             <h2 className="text-xl font-bold mb-2 text-green-900">WhatsApp</h2>
             <div className="flex items-center space-x-2 text-lg text-green-800">
               <a
-  href="https://wa.me/2348100589346"
+  href="https://wa.me/2349125437125"
   target="_blank"
   rel="noopener noreferrer"
   className="flex items-center space-x-2 text-lg text-green-800 hover:text-green-500 transition"
 >
   <FaWhatsapp />
-  <span>08100589346</span>
+  <span>0912 543 7125</span>
 </a>
             </div>
           </div>

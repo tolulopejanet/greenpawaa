@@ -52,12 +52,9 @@ const Footer = () => {
         <div>
           <h3 className="text-lg font-semibold mb-4 text-white">Follow Us</h3>
           <div className="flex space-x-4 md:justify-start mb-4">
-            {[FaInstagram, FaFacebookF, FaTwitter, FaLinkedin].map((Icon, idx) => (
-              <Icon
-                key={idx}
-                className="text-green-100 hover:text-white transition text-lg cursor-pointer"
-              />
-            ))}
+            <Link to="https://www.instagram.com/greenpawaang"><FaInstagram className="hover:text-green-500 cursor-pointer text-lg" /></Link>
+            <Link to="https://x.com/greenpawaa" ><FaTwitter className="hover:text-green-500 cursor-pointer text-lg" /></Link>
+            <Link to="https://www.linkedin.com/company/greenpawaang" ><FaLinkedin className="hover:text-green-500 cursor-pointer text-lg" /></Link>
           </div>
           <p>Let’s stay connected on social media and build a greener future together.</p>
         </div>
