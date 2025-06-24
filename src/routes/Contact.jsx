@@ -49,7 +49,7 @@ const ContactUs = () => {
   className="flex items-center space-x-2 text-lg text-green-800 hover:text-green-500 transition"
 >
   <FaWhatsapp />
-  <span>0813 825 7344</span>
+  <span>08100589346</span>
 </a>
             </div>
           </div>
