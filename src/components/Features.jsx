@@ -1,5 +1,6 @@
 import React from "react";
-import Panel from "../assets/panel.png";
+import Panel from "../assets/home1.jpg";
+import Panel2 from "../assets/home2.jpg";
 import {
   FaArrowRight,
   FaAtom,
@@ -67,7 +68,7 @@ const Features = () => {
       {/* Intro Section */}
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
         <div className="w-full">
-          <img src={Panel} alt="" className="w-full rounded-lg" />
+          <img src={Panel2} alt="" className="w-full rounded-lg" />
         </div>
         <div className="flex flex-col justify-center">
           <p className="text-gray-600 text-lg md:text-xl text-left">
